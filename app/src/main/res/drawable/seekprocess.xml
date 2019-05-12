@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/progress"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" >
+        <clip >
+            <shape>
+                <corners android:radius="8dip" />
+                <solid  android:color="#FF61DED0" />
+                <size android:height="4dp" android:width="64dp" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

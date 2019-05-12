@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="lxd.RecordingRoom.RecordingRoomFragment">
+
+    <FrameLayout
+        android:id="@+id/recording_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="left"
+            android:padding="20dp"
+            android:src="@mipmap/back0"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:textSize="@dimen/textview_up"
+                    android:text="music_name"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textview_low"
+                    android:text="正在录制: "/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textview_low"
+                    android:text="00:01"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textview_low"
+                    android:text="/04:01"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e6e6e6"
+            android:layout_gravity="bottom" />
+    </FrameLayout>
+
+
+    <lxd.RecordingRoom.LrcView
+        android:id="@+id/lrc_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/switch_mode"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/ic_padding"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="@dimen/ic_padding"
+                android:scaleType="fitEnd"
+                android:src="@mipmap/switch0" />
+
+            <TextView
+                android:id="@+id/switch_mode_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/textview_low"
+                android:text="原唱" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/resing"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/ic_padding"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="@dimen/ic_padding"
+                android:scaleType="fitEnd"
+                android:src="@mipmap/resing0" />
+
+            <TextView
+                android:id="@+id/resing_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/textview_low"
+                android:text="重唱" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/commit"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/ic_padding"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="@dimen/ic_padding"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="@dimen/ic_padding"
+                android:scaleType="fitEnd"
+                android:src="@mipmap/yes0" />
+
+            <TextView
+                android:id="@+id/commit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/textview_low"
+                android:text="结束" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/test_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="testPlay"/>
+
+    </LinearLayout>
+
+</LinearLayout>

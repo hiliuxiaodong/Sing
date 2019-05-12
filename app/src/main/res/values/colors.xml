@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="green">#31c17d</color>
+
+
+
+
+    <color name="seekBarNormalColor">#212B31</color>
+    <color name="colorSecondary">#FF61DED0</color>
+    <color name="theme">#03A9F4</color>
+    <color name="bottom_navigation_normal">#CCCCCC</color>
+    <color name="textColorPrimary">#FFFF</color>
+
+    <!--temp-->
+    <color name="colorText_1">#c7e8e1</color>
+    <color name="blue">#4ab7e8</color>
+    <color name="clicked">#d81e06</color>
+    <color name="unclicked">#8a8a8a</color>
+</resources>
